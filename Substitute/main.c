@@ -44,8 +44,7 @@ int charPosition(char *inputStr,char ch)
 int substitute(char *inputStr,char *outputStr)
 { int count = 0;
     if(strLen(inputStr)<=strLen("--"))
-        { outputStr =
-                    (char *) malloc(sizeof(char)*strLen(inputStr));
+        {// outputStr =                    (char *) malloc(sizeof(char)*strLen(inputStr));
          copyChars(inputStr,outputStr);
         }else
         {
